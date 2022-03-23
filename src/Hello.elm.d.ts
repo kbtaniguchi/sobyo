@@ -1,1 +1,1 @@
-export var Elm: any;
+export const Elm: any;

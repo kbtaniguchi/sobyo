@@ -1,6 +1,7 @@
-import { Elm } from './Hello.elm'
+import './assets/style.css';
+import { Elm } from './Hello.elm';
 
 Elm.Hello.init({
-    node: document.getElementById('app'),
-    flags: "Initial Message"
-})
+  node: document.getElementById('app'),
+  flags: 'Initial Message',
+});
