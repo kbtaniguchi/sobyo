@@ -2,6 +2,7 @@ module Hello exposing (main)
 
 import Browser
 import Html exposing (Html, div, text)
+import Html.Attributes exposing (class)
 import Html.Events exposing (onClick)
 import Message exposing (importableMessage)
 
@@ -40,7 +41,8 @@ update msg model =
 view : Model -> Html Msg
 view model =
     div []
-        [ div [ onClick (Name "Woooo") ] [ text model.message ]
+        [ div [ class "text-3xl font-bold underline"] [ text "Hello World"]
+        , div [ onClick (Name "Woooo") ] [ text model.message ]
         , div [] [ text importableMessage ]
         ]
 
