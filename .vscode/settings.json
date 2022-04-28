@@ -1,0 +1,10 @@
+{
+    "[elm]": {
+        "tailwindCSS.experimental.classRegex": [
+            "\\bclass\\s+\"([^\"]*)\""
+        ]
+    },
+    "tailwindCSS.includeLanguages": {
+        "elm": "html"
+    }
+}
