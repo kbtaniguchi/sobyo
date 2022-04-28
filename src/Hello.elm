@@ -41,7 +41,7 @@ update msg model =
 view : Model -> Html Msg
 view model =
     div []
-        [ div [ class "text-3xl font-bold underline"] [ text "Hello World"]
+        [ div [ class "text-3xl font-bold underline" ] [ text "Hello World" ]
         , div [ onClick (Name "Woooo") ] [ text model.message ]
         , div [] [ text importableMessage ]
         ]
