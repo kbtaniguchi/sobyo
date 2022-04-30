@@ -1,7 +1,7 @@
-import { Elm } from './Hello.elm';
+import { Elm } from './App.elm';
 import './assets/tailwind.css';
 
-Elm.Hello.init({
+Elm.App.init({
   node: document.getElementById('app'),
   flags: 'Initial Message',
 });

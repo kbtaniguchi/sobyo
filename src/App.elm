@@ -1,10 +1,9 @@
-module Hello exposing (main)
+module App exposing (main)
 
 import Browser
 import Html exposing (Html, div, text)
 import Html.Attributes exposing (class)
 import Html.Events exposing (onClick)
-import Message exposing (importableMessage)
 
 
 main : Program String Model Msg
@@ -24,7 +23,7 @@ type alias Model =
 
 init : String -> ( Model, Cmd Msg )
 init flags =
-    ( { message = "Hi, I'm compiled through vite-plugin-elm: " ++ flags }, Cmd.none )
+    ( { message = flags }, Cmd.none )
 
 
 type Msg
@@ -43,7 +42,6 @@ view model =
     div []
         [ div [ class "text-3xl font-bold underline" ] [ text "Hello World" ]
         , div [ onClick (Name "Woooo") ] [ text model.message ]
-        , div [] [ text importableMessage ]
         ]
 
 
